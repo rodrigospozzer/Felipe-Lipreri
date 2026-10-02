@@ -1,0 +1,17 @@
+{
+  "site-factory-gate": {
+    "enabled": true,
+    "PreToolUse": [
+      {
+        "matcher": "generate_image|run_command|write_to_file|replace_file_content|multi_replace_file_content|create_file|edit_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 scripts/site-factory-gate.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
