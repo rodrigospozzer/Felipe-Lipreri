@@ -1,7 +1,9 @@
-import { siteConfig } from "@/data/site.config";
+const fs = require('fs');
+
+const pageContent = `import { siteConfig } from "@/data/site.config";
 import { content } from "@/data/content";
 import Image from "next/image";
-import { Header, WhatsAppIcon } from "@/components/header";
+import { Header } from "@/components/header";
 import { Star, MapPin, User, Tag, Clock, Sparkles, ShieldCheck, Zap, MessageCircle, ThumbsUp, AirVent, Wrench, Droplets, PlugZap, Camera, Lightbulb, ChevronDown, CheckCircle2, Check, FileText, Settings } from "lucide-react";
 
 const getIcon = (iconName: string, className?: string) => {
@@ -28,92 +30,108 @@ export default function Home() {
     <main className="min-h-screen bg-[#F8FAFC] text-[#041E42] font-sans">
       <Header />
 
-      {/* 1. HERO - REDESIGN PREMIUM EDITORIAL */}
-      <section id="hero" className="relative bg-[#041E42] pt-8 md:pt-16 pb-12 md:pb-24 overflow-hidden">
+      {/* 1. HERO */}
+      <section id="hero" className="relative bg-[#041E42] pt-12 pb-16 md:pt-20 md:pb-24 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          
-          <div className="flex flex-col lg:flex-row items-center lg:items-stretch gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             
-            {/* TEXT COLUMN */}
-            <div className="w-full lg:w-5/12 flex flex-col justify-center relative z-20 pt-4 lg:pt-12">
-              <div className="flex items-center gap-3 mb-6 md:mb-8">
-                <div className="w-10 h-[2px] bg-[#F28C28]"></div>
-                <span className="text-[#F28C28] font-bold text-xs md:text-sm uppercase tracking-widest">
-                  Serra Gaúcha e Região
-                </span>
-              </div>
-              
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.1] mb-6 md:mb-8 tracking-tight">
-                Climatização e elétrica com <span className="text-[#3BA7DB] italic font-light">acabamento de verdade.</span>
+            {/* Left Content */}
+            <div className="flex flex-col z-10 text-white order-1 md:order-1">
+              <span className="text-[#F28C28] font-semibold text-sm uppercase tracking-wider mb-4">
+                {content.hero.eyebrow}
+              </span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
+                Climatização, elétrica e <span className="text-[#3BA7DB]">segurança com serviço bem feito.</span>
               </h1>
-              
-              <p className="text-base md:text-lg text-white/80 leading-relaxed mb-8 md:mb-12 max-w-md">
-                Conforto, segurança e serviço técnico focado no detalhe. Atendimento direto e sem intermediários.
+              <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-lg">
+                {content.hero.subtitle}
               </p>
-              
-              <div className="flex flex-col items-start gap-8">
+              <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <a
-                  href={`https://wa.me/${siteConfig.contact.whatsapp}`}
-                  className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 md:px-10 md:py-5 text-lg font-bold transition-all hover:-translate-y-1 shadow-lg hover:shadow-[#25D366]/20 rounded-full w-full sm:w-auto"
+                  href={\`https://wa.me/\${siteConfig.contact.whatsapp}\`}
+                  className="bg-[#F28C28] text-white px-8 py-4 rounded-xl text-center font-bold text-lg hover:bg-[#F28C28]/90 transition"
                 >
-                  <WhatsAppIcon className="w-6 h-6" />
-                  Peça seu Orçamento
+                  {content.hero.cta}
                 </a>
+                <a
+                  href={\`https://wa.me/\${siteConfig.contact.whatsapp}\`}
+                  className="border border-white text-white px-8 py-4 rounded-xl text-center font-bold text-lg hover:bg-white/10 transition"
+                >
+                  Chamar no WhatsApp
+                </a>
+              </div>
 
-                {/* Social Proof Text - Compact */}
-                <div className="flex items-center gap-4 text-sm font-medium text-white/80">
+              {/* Trust Badges - Desktop */}
+              <div className="hidden md:flex items-center gap-6 text-sm font-medium text-white/90">
+                <div className="flex items-center gap-2">
                   <div className="flex text-[#F28C28]">
                     {[...Array(5)].map((_, i) => <Star key={i} className="w-4 h-4 fill-current" />)}
                   </div>
-                  <span>Avaliações 5 estrelas</span>
+                  <span>5 estrelas no Google</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#3BA7DB]"></div>
+                  <span>Atendimento direto</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#3BA7DB]"></div>
+                  <span>Preço justo</span>
                 </div>
               </div>
             </div>
 
-            {/* IMAGE COLUMN - PROTAGONIST */}
-            <div className="w-full lg:w-7/12 relative mt-8 lg:mt-0">
-              {/* Desktop Composition */}
-              <div className="hidden lg:block relative w-full h-[75vh] min-h-[600px] rounded-3xl overflow-hidden shadow-2xl group">
-                <Image 
-                  src="/images/o%20felipe.jpg"
-                  alt="Felipe Lipreri em atendimento"
-                  fill
-                  className="object-cover object-[center_20%] transition-transform duration-1000 group-hover:scale-105"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#041E42]/80 via-transparent to-transparent"></div>
-                
-
-                <div className="absolute bottom-10 right-10 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl max-w-xs">
-                  <p className="text-white font-semibold text-lg leading-tight mb-2">Atendimento Direto</p>
-                  <p className="text-white/80 text-sm">Do primeiro contato até o serviço pronto, você fala comigo.</p>
-                </div>
+            {/* Right Images */}
+            <div className="relative h-[400px] md:h-[500px] w-full order-2 md:order-2 rounded-2xl md:rounded-tl-[80px] md:rounded-br-[80px] md:rounded-tr-2xl md:rounded-bl-2xl overflow-hidden">
+              <Image 
+                src="/images/imgi_34_696264296_18072934913410956_1703139684847338476_n.jpg"
+                alt="Felipe Lipreri"
+                fill
+                className="object-cover object-[center_30%]"
+                priority
+              />
+              
+              {/* Desktop overlapping images */}
+              <div className="hidden md:block absolute top-8 -left-8 w-40 h-40 rounded-2xl overflow-hidden border-4 border-[#041E42] shadow-xl">
+                <Image src="/images/imgi_24_797101896_18092704553410956_1716728865092901056_n.jpg" alt="Roof work" fill className="object-cover" />
               </div>
-
-              {/* Mobile Composition */}
-              <div className="lg:hidden relative w-full aspect-[4/5] sm:aspect-square rounded-3xl overflow-hidden shadow-2xl mt-4">
-                <Image 
-                  src="/images/o%20felipe.jpg"
-                  alt="Felipe Lipreri em atendimento"
-                  fill
-                  className="object-cover object-[center_20%]"
-                  priority
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#041E42] via-[#041E42]/20 to-transparent"></div>
-                
-                {/* Mobile Floating Badge */}
-                <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur rounded-2xl p-5 shadow-xl flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-[#EBF5FB] text-[#3BA7DB] flex items-center justify-center shrink-0">
-                    <User className="w-6 h-6 fill-current" />
-                  </div>
-                  <div>
-                    <p className="text-[#041E42] font-bold leading-tight">Atendimento Direto</p>
-                    <p className="text-[#041E42]/70 text-xs mt-0.5">Sem intermediários na execução.</p>
-                  </div>
-                </div>
+              <div className="hidden md:block absolute bottom-8 left-8 w-48 h-32 rounded-2xl overflow-hidden border-4 border-[#041E42] shadow-xl">
+                <Image src="/images/imgi_29_722313928_18078109142410956_6371540210880806133_n.jpg" alt="Indoor work" fill className="object-cover" />
               </div>
-
+              
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-2xl p-4 shadow-xl text-center hidden md:block">
+                <span className="block text-[#F28C28] font-bold text-2xl">6 serviços</span>
+                <span className="text-[#041E42] text-xs font-semibold">climatização · elétrica · segur...</span>
+              </div>
             </div>
+
+            {/* Trust Badges - Mobile */}
+            <div className="md:hidden w-full order-3 bg-white rounded-2xl p-6 shadow-sm flex justify-between items-start text-center">
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-10 h-10 rounded-full bg-[#FFF5E5] text-[#F28C28] flex items-center justify-center">
+                  <Star className="w-5 h-5 fill-current" />
+                </div>
+                <span className="text-xs font-semibold text-[#041E42] leading-tight">5 estrelas<br/>no Google</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-10 h-10 rounded-full bg-[#EBF5FB] text-[#3BA7DB] flex items-center justify-center">
+                  <User className="w-5 h-5 fill-current" />
+                </div>
+                <span className="text-xs font-semibold text-[#041E42] leading-tight">Atendimento<br/>direto</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-10 h-10 rounded-full bg-[#EBF5FB] text-[#3BA7DB] flex items-center justify-center">
+                  <Tag className="w-5 h-5 fill-current" />
+                </div>
+                <span className="text-xs font-semibold text-[#041E42] leading-tight">Preço<br/>justo</span>
+              </div>
+              <div className="flex flex-col items-center gap-2">
+                <div className="w-10 h-10 rounded-full bg-[#EBF5FB] text-[#3BA7DB] flex items-center justify-center">
+                  <MapPin className="w-5 h-5 fill-current" />
+                </div>
+                <span className="text-xs font-semibold text-[#041E42] leading-tight">Serra Gaúcha<br/>e região</span>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -145,7 +163,7 @@ export default function Home() {
                     {service.description}
                   </p>
                   
-                  <a href={`https://wa.me/${siteConfig.contact.whatsapp}`} className="inline-flex items-center text-[#041E42] font-bold text-sm group-hover:text-[#3BA7DB] transition-colors">
+                  <a href={\`https://wa.me/\${siteConfig.contact.whatsapp}\`} className="inline-flex items-center text-[#041E42] font-bold text-sm group-hover:text-[#3BA7DB] transition-colors">
                     Solicitar orçamento <span className="ml-2">→</span>
                   </a>
                 </div>
@@ -434,10 +452,10 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col gap-4">
-                <a href={`https://wa.me/${siteConfig.contact.whatsapp}`} className="bg-white/10 hover:bg-[#25D366]/20 transition rounded-xl p-4 flex items-center justify-between group border border-transparent hover:border-[#25D366]/50">
+                <a href={\`https://wa.me/\${siteConfig.contact.whatsapp}\`} className="bg-white/10 hover:bg-white/20 transition rounded-xl p-4 flex items-center justify-between group">
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-lg bg-[#25D366] flex items-center justify-center">
-                      <WhatsAppIcon className="w-7 h-7 text-white" />
+                      <MessageCircle className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <p className="text-sm text-white/70">WhatsApp</p>
@@ -565,11 +583,11 @@ export default function Home() {
               </p>
             </div>
             <a
-              href={`https://wa.me/${siteConfig.contact.whatsapp}`}
-              className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 text-lg font-bold transition-transform hover:-translate-y-1 shadow-lg hover:shadow-xl rounded-full whitespace-nowrap"
+              href={\`https://wa.me/\${siteConfig.contact.whatsapp}\`}
+              className="bg-[#041E42] text-white px-8 py-4 rounded-xl font-bold flex items-center gap-4 hover:bg-[#0A2540] transition whitespace-nowrap"
             >
-              <WhatsAppIcon className="w-6 h-6 fill-current" />
-              Pedir Orçamento
+              <MessageCircle className="w-5 h-5" />
+              Chamar no WhatsApp
             </a>
           </div>
         </div>
@@ -616,16 +634,9 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* FAB WHATSAPP */}
-      <a 
-        href={`https://wa.me/${siteConfig.contact.whatsapp}`}
-        className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50 bg-[#25D366] text-white p-4 md:py-4 md:px-6 rounded-full shadow-2xl hover:scale-105 transition-transform flex items-center justify-center gap-3 group"
-        aria-label="Fale no WhatsApp"
-      >
-        <WhatsAppIcon className="w-8 h-8 fill-current drop-shadow-md" />
-        <span className="hidden md:block font-bold text-lg drop-shadow-md">Fale no WhatsApp</span>
-      </a>
-
     </main>
   );
 }
+`;
+
+fs.writeFileSync('app/page.tsx', pageContent);

@@ -1,25 +1,24 @@
-# Change Request Log
+# Change Request Protocol
 
-Aqui são registrados pedidos formais de alteração em decisões de fases já aprovadas.
-Nenhuma alteração em fase aprovada pode ocorrer silenciosamente.
+## Change Information
+- **DATE:** 2026-10-02
+- **INITIATOR:** HUMAN
+- **REASON:** CREATIVE QUALITY ESCALATION. The rendered site is technically functional but visually simple and too generic for the expected Factory standard. "Visual ambition insufficient."
+- **TARGET PHASES:** GATE_03 (Art Direction), VISUAL_ASSET_PLAN, GATE_04 (UI Architecture), GATE_05 (Frontend Implementation), GATE_06 (Visual QA), GATE_07_LOCAL (Performance QA).
 
-## Exemplo de formato:
-### REQUEST_ID: [001]
-- **DATE**: [YYYY-MM-DD]
-- **ORIGIN_PHASE**: [Ex: Visual QA]
-- **TARGET_PHASE**: [Ex: UI Architecture]
-- **ISSUE**: [Problema encontrado]
-- **CURRENT_APPROVED_DECISION**: [O que estava aprovado]
-- **WHY_CHANGE_IS_NEEDED**: [O motivo real]
-- **PROPOSED_DIRECTION**: [Direção de alteração sugerida]
-- **VISUAL_IMPACT**: [Impacto visual]
-- **CONTENT_IMPACT**: [Impacto no conteúdo]
-- **PERFORMANCE_IMPACT**: [Impacto na performance]
-- **BUSINESS_IMPACT**: [Impacto comercial]
-- **REQUIRES_HUMAN_APPROVAL**: [YES/NO]
-- **STATUS**: [PENDING / APPROVED / REJECTED]
-- **RESOLUTION**: [Como foi resolvido]
+## Invalidation Impact
+- **GATE_01:** PRESERVED (PASS)
+- **GATE_02:** PRESERVED (PASS)
+- **GATE_03:** INVALIDATED -> IN_PROGRESS
+- **VISUAL_ASSET_PLAN:** INVALIDATED -> IN_PROGRESS
+- **GATE_04:** INVALIDATED -> NOT_STARTED
+- **GATE_05:** INVALIDATED -> NOT_STARTED
+- **GATE_06:** INVALIDATED -> NOT_STARTED
+- **GATE_07_LOCAL:** INVALIDATED -> NOT_STARTED
 
----
-
-(Adicione os Change Requests abaixo)
+## Action Required
+- VISUAL_FREEZE set to INACTIVE.
+- Re-run `art-director` to create a strong CORE_VISUAL_IDEA based on brand territories (Climatização, Elétrica, Marca, Serviço, Local).
+- `art-director` must generate exactly 3 visual concepts in `docs/factory/VISUAL-CONCEPTS.md`.
+- `art-director` must update `docs/factory/03-art-direction.md` and `docs/factory/VISUAL-ASSET-PLAN.md`.
+- Stop pipeline and request HUMAN_REVIEW_REQUIRED for concept selection before proceeding to GATE_04.

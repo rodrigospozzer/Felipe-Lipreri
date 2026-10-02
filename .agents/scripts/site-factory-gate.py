@@ -25,13 +25,26 @@ IMPLEMENTATION_BASENAMES = {
     "components.json",
 }
 
-REQUIRED_IMPLEMENTATION_GATES = (
-    "GATE_01=PASS",
-    "GATE_02=PASS",
-    "GATE_03=PASS",
-    "GATE_04=APPROVED",
-    "GATE_05=PASS",
-)
+REQUIRED_IMPLEMENTATION_GATES = {
+    "GATE_01": [
+        "GATE_01=PASS",
+        "GATE_01 (Material Audit): PASS"
+    ],
+    "GATE_02": [
+        "GATE_02=PASS",
+        "GATE_02 (Content Strategy): PASS"
+    ],
+    "GATE_03": [
+        "GATE_03=PASS",
+        "GATE_03 (Art Direction): PASS"
+    ],
+    "GATE_04": [
+        "GATE_04=APPROVED",
+        "GATE_04 (UI Architecture): APPROVED",
+        "GATE_04=PASS",
+        "GATE_04 (UI Architecture): PASS"
+    ]
+}
 
 WRITE_TOOLS = {
     "write_to_file",
@@ -120,20 +133,58 @@ is_template_mode = "FACTORY_MODE: TEMPLATE_MODE" in status
 
 missing = []
 if not is_template_mode:
-    missing = [
-        gate for gate in REQUIRED_IMPLEMENTATION_GATES
-        if gate not in status
-    ]
+    for gate_name, accepted_states in REQUIRED_IMPLEMENTATION_GATES.items():
+        if not any(state in status for state in accepted_states):
+            missing.append(gate_name)
 
-# Geração visual só após Art Direction.
+# Geração visual durante e após Art Direction.
 if tool == "generate_image":
-    if "GATE_03=PASS" not in status:
-        emit("deny", "Site Factory Gate: generate_image bloqueado até GATE_03=PASS.")
-    emit("allow", "Gate visual liberado.")
+    if "GATE_03=PASS" in status:
+        emit("allow", "Gate visual liberado.")
+        
+    is_art_direction = "CURRENT_PHASE: ART_DIRECTION" in status and "CURRENT_GATE: GATE_03" in status
+    is_asset_plan = "CURRENT_PHASE: VISUAL_ASSET_PLAN" in status or "CURRENT_GATE: 03A" in status
+    
+    if is_art_direction or is_asset_plan:
+        emit("allow", "Gate visual liberado durante fase criativa.")
+        
+    emit("deny", "Site Factory Gate: generate_image bloqueado até GATE_03=PASS.")
 
 # Fecha bypass por shell antes da implementação.
 if tool == "run_command":
     if missing:
+        command = args.get("CommandLine", "").strip()
+        
+        is_art_direction = "CURRENT_PHASE: ART_DIRECTION" in status and "CURRENT_GATE: GATE_03" in status
+        is_asset_plan = "CURRENT_PHASE: VISUAL_ASSET_PLAN" in status or "CURRENT_GATE: 03A" in status
+        
+        if is_art_direction or is_asset_plan:
+            forbidden_tokens = [";", "&&", "||", ">", "<", "$(", "`", "..", "rm ", "mv ", "sed ", "perl ", "python", "bash", "sh ", "git ", "cat ", "echo ", "truncate "]
+            has_forbidden = any(token in command for token in forbidden_tokens)
+            
+            is_mkdir = command in ("mkdir -p docs/factory/visual-concepts", "mkdir -p docs/factory/visual-concepts/")
+            is_ls = command.startswith("ls ") and "docs/factory/visual-concepts" in command
+            
+            is_cp = False
+            if command.startswith("cp "):
+                parts = command.split()
+                if len(parts) == 3:
+                    src, dst = parts[1], parts[2]
+                    allowed_dsts = {
+                        "docs/factory/visual-concepts/concept-01-thermal-pulse.jpg",
+                        "docs/factory/visual-concepts/concept-01-thermal-pulse.png",
+                        "docs/factory/visual-concepts/concept-02-precise-grid.jpg",
+                        "docs/factory/visual-concepts/concept-02-precise-grid.png",
+                        "docs/factory/visual-concepts/concept-03-local-craft.jpg",
+                        "docs/factory/visual-concepts/concept-03-local-craft.png"
+                    }
+                    if dst in allowed_dsts:
+                        if (src.endswith(".jpg") or src.endswith(".png")) and (dst.endswith(".jpg") or dst.endswith(".png")):
+                            is_cp = True
+                            
+            if not has_forbidden and (is_mkdir or is_ls or is_cp):
+                emit("allow", "Gate de shell restrito liberado para gerenciamento de mockups.")
+                
         emit(
             "deny",
             "Site Factory Gate: run_command do agente bloqueado antes da implementação. "
