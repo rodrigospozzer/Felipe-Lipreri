@@ -1,380 +1,344 @@
-# Conteúdo Aprovado
+# Conteúdo Aprovado — Felipe Lipreri · Climatização e Elétrica
 
-> Este arquivo é a fonte de verdade para textos, argumentos, ofertas, depoimentos, FAQs e informações comerciais já aprovadas.
-> O objetivo é permitir que a Z-Agent Site Factory reorganize a narrativa sem inventar fatos ou depender de uma implementação antiga.
->
-> Preencha apenas com informações reais e aprovadas.
-> Quando uma seção não se aplicar, escreva `Não aplicável`.
-> Não invente informações para completar o arquivo.
+## 1. Regras de uso
 
-## 1. Proposta principal
+Este documento separa o conteúdo em três categorias:
 
-Título ou promessa principal aprovada:
+- **APPROVED_FACT:** fato apresentado nos materiais fornecidos.
+- **APPROVED_COPY:** texto apresentado como conteúdo institucional nos materiais fornecidos.
+- **SUGGESTED_COPY_FROM_MANUAL:** sugestão de comunicação do Manual de Identidade; pode ser usada como referência, mas não deve ser tratada automaticamente como copy final.
+- **NOT_PROVIDED / UNCONFIRMED:** informação não fornecida ou ainda não confirmada.
 
-Subtítulo / explicação:
-
-Mensagem principal que o visitante precisa entender:
+Não preencher lacunas com conteúdo inventado.
 
 ---
 
-## 2. Problema / dor
+## 2. Company Description
 
-Textos e argumentos aprovados:
+### APPROVED_COPY
+**Felipe Lipreri · Climatização e Elétrica**
 
-- 
-- 
-- 
-
----
-
-## 3. Solução
-
-Descrição aprovada da solução:
+Empresa especializada em instalação, limpeza, higienização e manutenção de ar condicionado em Nova Petrópolis e região, além de elétrica em geral, instalação de câmeras de segurança e iluminação, sempre com qualidade e excelência.
 
 ---
 
-## 4. Serviços / produtos
+## 3. Business Proposition
 
-### Item 1
-Nome:
-
-Descrição:
-
-Benefício principal:
-
-### Item 2
-Nome:
-
-Descrição:
-
-Benefício principal:
-
-### Item 3
-Nome:
-
-Descrição:
-
-Benefício principal:
+### APPROVED_COPY
+Cuidamos do conforto e da segurança do seu ambiente, da instalação do equipamento à manutenção preventiva. O atendimento é direto com o profissional, com orientação clara e acabamento limpo.
 
 ---
 
-## 5. Benefícios
+## 4. Mission
 
-Liste apenas benefícios reais e aprovados:
-
-- 
-- 
-- 
+### APPROVED_COPY
+Entregar serviços de climatização e elétrica com qualidade, pontualidade e transparência.
 
 ---
 
-## 6. Diferenciais
+## 5. Vision
 
-Liste apenas diferenciais reais e sustentados pelos materiais do projeto:
-
-- 
-- 
-- 
+### APPROVED_COPY
+Ser referência em climatização e elétrica na Serra Gaúcha, reconhecida pela confiança dos clientes.
 
 ---
 
-## 7. Tecnologia / metodologia
+## 6. Values
 
-Informações reais que podem ser mencionadas:
-
-- 
-- 
-- 
-
-Explique, quando necessário, como esses pontos técnicos se traduzem em benefício para o cliente:
-
----
-
-## 8. Processo
-
-### Etapa 1
-Título:
-
-Descrição:
-
-### Etapa 2
-Título:
-
-Descrição:
-
-### Etapa 3
-Título:
-
-Descrição:
-
-### Etapa 4
-Título:
-
-Descrição:
+### APPROVED_COPY
+- Qualidade e capricho em cada detalhe
+- Pontualidade e agilidade
+- Honestidade e preço justo
+- Segurança elétrica e cuidado técnico
+- Respeito e atendimento próximo
 
 ---
 
-## 9. Sobre a empresa
+## 7. Services
 
-Texto institucional aprovado:
+### 7.1 Instalação de ar condicionado
+**APPROVED_COPY**
 
----
+Instalação profissional de aparelhos split, com tubulação organizada, boa fixação e acabamento limpo.
 
-## 10. Autoridade / equipe / fundador
+### 7.2 Manutenção de ar condicionado
+**APPROVED_COPY**
 
-Nome:
+Revisão preventiva e corretiva para manter desempenho, economia de energia e durabilidade do aparelho.
 
-Cargo / função:
+### 7.3 Limpeza e higienização
+**APPROVED_COPY**
 
-Texto aprovado:
+Limpeza completa com proteção do ambiente, para um ar mais limpo, saudável e sem odores.
 
-Asset relacionado:
+### 7.4 Elétrica em geral
+**APPROVED_COPY**
 
----
+Instalações e reparos elétricos com atenção às normas técnicas e foco em segurança.
 
-## 11. Portfólio / cases
+### 7.5 Câmeras de segurança
+**APPROVED_COPY**
 
-> Liste somente projetos, clientes ou trabalhos reais.
+Instalação e configuração de câmeras para monitorar sua casa ou empresa com tranquilidade.
 
-### Projeto 1
-Nome / nicho:
+### 7.6 Iluminação
+**APPROVED_COPY**
 
-Descrição:
-
-Asset relacionado:
-
-URL, quando existir:
-
-### Projeto 2
-Nome / nicho:
-
-Descrição:
-
-Asset relacionado:
-
-URL, quando existir:
-
-### Projeto 3
-Nome / nicho:
-
-Descrição:
-
-Asset relacionado:
-
-URL, quando existir:
+Instalação de luminárias, spots e pontos de luz, com projeto prático e acabamento caprichado.
 
 ---
 
-## 12. Depoimentos reais
+## 8. Service Area
 
-> Não inventar depoimentos, nomes, cargos, empresas, avaliações ou resultados.
+### APPROVED_FACT
+- Nova Petrópolis
+- Serra Gaúcha
+- Região atendida conforme disponibilidade
 
-### Depoimento 1
-Nome:
-
-Cargo / empresa:
-
-Texto:
-
-Avatar relacionado:
-
-### Depoimento 2
-Nome:
-
-Cargo / empresa:
-
-Texto:
-
-Avatar relacionado:
-
-### Depoimento 3
-Nome:
-
-Cargo / empresa:
-
-Texto:
-
-Avatar relacionado:
+### APPROVED_COPY
+Nova Petrópolis e toda a Serra Gaúcha e região. Peça seu orçamento pelo WhatsApp (54) 99120-5801.
 
 ---
 
-## 13. Oferta
+## 9. Differentiators
 
-Produto / serviço:
+### APPROVED_COPY / APPROVED_FACT FROM CUSTOMER REVIEWS
 
-Preço atual:
+**Pontualidade**  
+Cumpre o dia e a hora combinados.
 
-Preço anterior / de referência, quando real:
+**Capricho e acabamento**  
+Instalação organizada, limpa e esteticamente discreta.
 
-Mensalidade / recorrência:
+**Agilidade**  
+Atendimento rápido, do contato ao serviço concluído.
 
-Condições de pagamento:
+**Explicação clara**  
+Avalia, explica de forma prática e tira dúvidas.
 
-Prazo:
+**Segurança técnica**  
+Conhecimento de normas elétricas e boas práticas.
 
-Garantia:
-
-Domínio:
-
-Hospedagem:
-
-Suporte:
-
-Alterações incluídas:
-
-Outras regras comerciais:
+**Preço justo**  
+Ótimo custo-benefício, com orçamento transparente.
 
 ---
 
-## 14. CTA
+## 10. Google Proof
 
-CTA principal:
+### APPROVED_FACT
+- Avaliações de **5 estrelas no Google**.
+- O Perfil Corporativo informa que os diferenciais aparecem de forma recorrente em avaliações de clientes reais.
 
-CTA secundário:
-
-Destino do CTA principal:
-
-Mensagem padrão de WhatsApp, quando houver:
-
----
-
-## 15. Objeções
-
-Principais objeções que precisam ser tratadas:
-
-- 
-- 
-- 
-
-Respostas aprovadas:
-
-- 
-- 
-- 
+### NÃO INFERIR
+- Número total de avaliações: **NOT_PROVIDED**
+- URL do perfil do Google: **NOT_PROVIDED**
 
 ---
 
-## 16. FAQ
+## 11. Testimonials
 
-### Pergunta 1
-Resposta:
+> Preservar atribuição e sentido. Não combinar depoimentos, não inventar cargo ou empresa e não transformar frases de clientes em claims institucionais sem confirmação.
 
-### Pergunta 2
-Resposta:
+### Ana Beatriz E. — Instalação
+**APPROVED_COPY**
 
-### Pergunta 3
-Resposta:
+“O trabalho do Felipe é sensacional! Desde o atendimento, que foi super rápido, até na hora de colocar nosso ar, super cuidadoso, deixa tudo limpo e organizado (mesmo na minha bagunça de mudança). Eficiente no que faz e ágil. Recomendo de olhos fechados! Deixou o ambiente da minha casa cheiroso.”
 
-### Pergunta 4
-Resposta:
+### Bianca G. — Higienização
+**APPROVED_COPY**
 
-### Pergunta 5
-Resposta:
+“Excelente trabalho e profissional. Antes de realizar a higienização do ar condicionado, Felipe veio avaliar o que precisa ser feito e me explicou de forma prática, demonstrando que entende do serviço e passando segurança. De forma muito ágil e eficiente, realizou a manutenção e esclareceu dúvidas sobre o produto que já estava instalado na sala. Super recomendo!”
 
----
+### Isolde Maria S. — Instalação
+**APPROVED_COPY**
 
-## 17. Contatos oficiais
+“O Felipe Lipreri é, sem dúvida, o melhor instalador de ar condicionado da cidade. Destaca-se pela capacitação técnica e o conhecimento das normas elétricas, o que garante total segurança, máxima eficiência energética e a durabilidade do aparelho. Além de cumprir rigorosamente o dia e a hora marcada e oferecer um preço justo, ele entrega uma instalação esteticamente minimalista, com extrema limpeza e educação.”
 
-WhatsApp:
+> A expressão “melhor instalador de ar condicionado da cidade” é opinião da cliente e deve permanecer claramente como depoimento, não como claim institucional.
 
-Telefone:
+### Sheron e Mateus Oficial — Ar-condicionado e elétrica
+**APPROVED_COPY**
 
-E-mail:
+“Conheço o Felipe a mais de 10 anos, extremamente caprichoso e competente. Super ágil no trabalho e profissional em instalação e manutenção de ar condicionado e instalações elétricas. Recomendo sempre.”
 
-Instagram:
+> Não usar “mais de 10 anos” como tempo de experiência institucional sem confirmação independente.
 
-Facebook:
+### Luísa L.
+**APPROVED_COPY**
 
-Outros:
+“Profissional de confiança, pontual, prestativo e muito caprichoso. Ótimo custo/benefício. Recomendamos o seu serviço.”
 
----
+### Koki Imóveis
+**APPROVED_COPY**
 
-## 18. Informações para SEO
+“Ótimo profissional! Pontual e atencioso. Realizou a higienização dos nossos ar-condicionado com eficiência e muita qualidade. Recomendamos!”
 
-Nome da empresa:
+### Nycollas P.
+**APPROVED_COPY**
 
-Oferta principal:
+“Excelente profissional, atendimento, qualidade, acabamento e simpatia.”
 
-Serviços principais:
+### Thais O.
+**APPROVED_COPY**
 
-Região, quando relevante:
+“Ótimo profissional, pontual, caprichoso, atendimento perfeito, recomendo!”
 
-Termos importantes reais:
+### Fernando N.
+**APPROVED_COPY**
 
-Descrição institucional aprovada:
+“Pontual, caprichoso e eficiente, super recomendo.”
 
-URL final, quando conhecida:
+### Neide M.
+**APPROVED_COPY**
 
----
+“Fiquei muito contente com o trabalho, ele presta um ótimo serviço, é de confiança, e tem um bom preço.”
 
-## 19. Claims permitidos
+### Tobi S.
+**APPROVED_COPY**
 
-Liste afirmações factuais que podem ser utilizadas porque são reais e comprovadas pelos materiais fornecidos:
+“Ótimo serviço, rápido para atender, serviço muito bem feito. Recomendo.”
 
-- 
-- 
-- 
+### Lilian B.
+**APPROVED_COPY**
 
----
+“Bom atendimento e agilidade na prestação do serviço.”
 
-## 20. Claims proibidos / não comprovados
+### Renan C.
+**APPROVED_COPY**
 
-Liste informações que NÃO podem ser inventadas ou afirmadas sem nova confirmação:
+“Serviço de qualidade. Mais de 10 anos de experiência.”
 
-- número de clientes não fornecido
-- resultados numéricos não comprovados
-- métricas de performance não verificadas
-- avaliações, notas ou estrelas não fornecidas
-- certificações não fornecidas
-- prêmios não fornecidos
-- garantias não aprovadas
-- localidades não confirmadas
-- qualquer outro dado específico não presente nas fontes reais
+> A informação de experiência aparece no depoimento e não deve ser elevada a fato institucional sem confirmação adicional.
 
-Outros claims proibidos deste projeto:
+### Luciane S.
+**APPROVED_COPY**
 
-- 
-- 
-- 
+“Super indico!!”
 
----
+### Luciano H.
+**APPROVED_COPY**
 
-## 21. Conteúdo que não pode desaparecer
+“Serviço de qualidade.”
 
-Liste textos, argumentos, informações comerciais ou provas que precisam continuar presentes semanticamente, mesmo que sejam reorganizados visualmente:
+### André S.
+**APPROVED_COPY**
 
-- 
-- 
-- 
+“Excelente profissional.”
 
 ---
 
-## 22. Assets associados ao conteúdo
+## 12. Contact
 
-Relacione, quando útil, conteúdos com materiais reais disponíveis:
+### APPROVED_FACT
 
-| Conteúdo | Asset | Observação |
-|---|---|---|
-|  |  |  |
-|  |  |  |
-|  |  |  |
+**Nome:** Felipe Lipreri  
+**Atuação:** Climatização e Elétrica  
+**WhatsApp:** (54) 99120-5801  
+**WhatsApp URL:** https://wa.me/5554991205801  
+**Instagram:** @lipreri.climatizacao  
+**Instagram URL:** https://instagram.com/lipreri.climatizacao  
+**Área de atendimento:** Nova Petrópolis · Serra Gaúcha e região
 
----
-
-## 23. Conteúdo existente / legado
-
-Existe site, landing page, PDF, apresentação ou outro material anterior com conteúdo aprovado?
-
-Fonte:
-
-O que deve ser preservado:
-
-O que pode ser reescrito:
-
-O que NÃO deve ser usado como referência visual:
+### NOT_PROVIDED
+- E-mail
+- Endereço físico
+- Horário de atendimento
+- CNPJ / razão social
 
 ---
 
-## 24. Observações finais
+## 13. CTA Phrases
 
-Notas adicionais importantes:
+### APPROVED_COPY
+- Peça seu orçamento.
+- Solicite seu orçamento sem compromisso.
+- Qualidade, pontualidade e confiança.
+
+### SUGGESTED_COPY_FROM_MANUAL
+- Pedir orçamento
+- Nossos serviços
+- Chamar no WhatsApp
+- Chame no WhatsApp e receba seu orçamento sem compromisso.
+- Instalação profissional de ar condicionado em Nova Petrópolis.
+- Invista no que você respira todos os dias.
+
+---
+
+## 14. Local SEO Suggestions
+
+### SUGGESTED_COPY_FROM_MANUAL
+
+**Título sugerido:**  
+Instalação e Manutenção de Ar Condicionado em Nova Petrópolis | Felipe Lipreri
+
+**Descrição sugerida:**  
+Instalação, limpeza e manutenção de ar condicionado, elétrica em geral e câmeras de segurança em Nova Petrópolis e região. Peça seu orçamento.
+
+> A Factory pode adaptar a arquitetura de SEO se necessário, sem inventar novos fatos.
+
+---
+
+## 15. Reference Structure From Brand Manual
+
+### SUGGESTED_STRUCTURE_FROM_MANUAL — NÃO OBRIGATÓRIA
+
+1. Header
+2. Hero
+3. Serviços
+4. Como funciona
+5. Antes e depois
+6. Avaliações
+7. Contato
+8. Rodapé
+
+> Esta estrutura é apenas referência. O Content Strategist deve decidir a arquitetura final com base no objetivo comercial, conteúdo e assets reais.
+
+---
+
+## 16. Commercial / Claim Restrictions
+
+### GUARANTEE
+**NOT_PROVIDED**
+
+O manual cita “garantia” como tema possível de comunicação, mas não informa:
+- prazo;
+- cobertura;
+- condições.
+
+**PROIBIDO criar claim de garantia até confirmação.**
+
+### BEFORE / AFTER
+**UNCONFIRMED**
+
+O manual recomenda mostrar antes/depois e boa vs. má instalação, porém o Material Auditor deve confirmar se existem pares reais de assets adequados.
+
+### YEARS OF EXPERIENCE
+**UNCONFIRMED AS INSTITUTIONAL CLAIM**
+
+Existem menções em depoimentos, mas não há confirmação corporativa independente.
+
+### GOOGLE REVIEWS COUNT
+**NOT_PROVIDED**
+
+Não inventar quantidade.
+
+---
+
+## 17. Footer Information
+
+### APPROVED_FACT
+- Felipe Lipreri
+- Climatização e Elétrica
+- Instalação, manutenção e higienização de ar condicionado
+- Elétrica em geral
+- Câmeras de segurança
+- Iluminação
+- WhatsApp: (54) 99120-5801
+- Instagram: @lipreri.climatizacao
+- Área de atendimento: Nova Petrópolis · Serra Gaúcha e região
+
+### APPROVED_COPY
+**Qualidade, pontualidade e confiança.**
+
+**Solicite seu orçamento sem compromisso.**
